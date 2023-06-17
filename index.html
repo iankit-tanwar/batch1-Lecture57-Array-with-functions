@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in javascript</title>
+
+    <style>
+
+    </style>
+
+
+    <script>
+        //1 function defination
+        function myFunction(x, y) { // x and y are formal arguments/ parameter
+            //functoion body
+
+
+            // function may return something
+            return x + y;
+
+        }
+
+        //2 function Calling
+        // myFunction is a user Function
+        let z = myFunction(10, 20); // 10 and 20 are actual arguments
+
+        console.log(z);
+
+        //alert is a pre defined function
+        //alert(z);
+
+    </script>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        //variable can store 1 value at a time
+
+        //array can store more than 1 value at a time
+
+        // array are denoted by Square Bracket []
+
+        // array syntax 
+        // var arrayName = [element1, element2, elemen3,........]
+        // let  arrayName = [member1, member2, member3,........]
+        // const arrayName = [index1, index2, index3,........]
+        var students = ['anil', "Ankit", `Sunil`, "Praveen"];
+
+        console.log(students);
+
+        // array with functions
+        // function defination
+
+        function greet(a) {
+
+            console.log('hello ' + a + ' good Morning')
+        }
+
+        // function initalization
+
+        // array always start with zero index
+
+        greet(students[0]);
+
+        greet(students[1]);
+        greet(students[2]);
+        greet(students[3]);
+        greet(students[4]);
+
+
+
+
+        //function array  with for loop 
+
+        // function defiantion
+        function greetA(t) {
+            //function body
+
+            console.log('hello ' + t + '')
+
+        }
+        /*for (initializaton 1; condition 2; increment/ decrement 3) 
+               */
+        for (i = 0; i <= 4; i++) {
+            //function calling
+            greetA(students[i])
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
